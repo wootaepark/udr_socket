@@ -6,7 +6,7 @@ PORT = 8080
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
-    s.listen(1)
+    s.listen(100)
     print('Start server')
     while True:
         try:
